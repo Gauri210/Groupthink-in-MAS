@@ -1,0 +1,642 @@
+{
+  "pilot": [
+    {
+      "id": "logic_p1",
+      "bucket": "logic",
+      "question": "A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball cost, in dollars?",
+      "ground_truth": "$0.05"
+    },
+    {
+      "id": "logic_p2",
+      "bucket": "logic",
+      "question": "If it takes 5 machines 5 minutes to make 5 widgets, how many minutes would it take 100 machines to make 100 widgets?",
+      "ground_truth": "5"
+    },
+    {
+      "id": "trivia_p1",
+      "bucket": "trivia",
+      "question": "What is the chemical symbol for gold?",
+      "ground_truth": "Au"
+    },
+    {
+      "id": "trivia_p2",
+      "bucket": "trivia",
+      "question": "Which planet in our solar system has the most moons?",
+      "ground_truth": "Saturn"
+    },
+    {
+      "id": "trick_p1",
+      "bucket": "trick",
+      "question": "If a plane crashes exactly on the border between the United States and Canada, where are the survivors buried?",
+      "ground_truth": "Survivors are not buried"
+    },
+    {
+      "id": "trick_p2",
+      "bucket": "trick",
+      "question": "How many months of the year have 28 days?",
+      "ground_truth": "12"
+    }
+  ],
+  "full": [
+    {
+      "id": "logic_001",
+      "bucket": "logic",
+      "question": "A bat and a ball cost $1.10 in total. The bat costs $1.00 more than the ball. How much does the ball cost, in dollars?",
+      "ground_truth": "$0.05"
+    },
+    {
+      "id": "logic_002",
+      "bucket": "logic",
+      "question": "If it takes 5 machines 5 minutes to make 5 widgets, how many minutes would it take 100 machines to make 100 widgets?",
+      "ground_truth": "5"
+    },
+    {
+      "id": "logic_003",
+      "bucket": "logic",
+      "question": "In a lake, there is a patch of lily pads that doubles in size every day. If it takes 48 days for the patch to cover the entire lake, how many days would it take to cover half the lake?",
+      "ground_truth": "47"
+    },
+    {
+      "id": "logic_004",
+      "bucket": "logic",
+      "question": "A shirt and a tie together cost $50. The shirt costs $40 more than the tie. How much does the tie cost?",
+      "ground_truth": "$5"
+    },
+    {
+      "id": "logic_005",
+      "bucket": "logic",
+      "question": "If you have 3 apples and you take away 2, how many do you have?",
+      "ground_truth": "2"
+    },
+    {
+      "id": "logic_006",
+      "bucket": "logic",
+      "question": "A farmer has 17 sheep. All but 9 die. How many sheep does the farmer have left?",
+      "ground_truth": "9"
+    },
+    {
+      "id": "logic_007",
+      "bucket": "logic",
+      "question": "If a runner is training and doubles their distance every week, starting at 2 km in week 1, how many kilometers do they run in week 5?",
+      "ground_truth": "32"
+    },
+    {
+      "id": "logic_008",
+      "bucket": "logic",
+      "question": "Three boxes are labeled 'Apples', 'Oranges', and 'Apples and Oranges'. All three labels are wrong. You may pick one fruit from one box to determine the correct labels. Which box should you pick from?",
+      "ground_truth": "The box labeled 'Apples and Oranges'"
+    },
+    {
+      "id": "logic_009",
+      "bucket": "logic",
+      "question": "A train travels 60 miles in 1.5 hours. At the same average speed, how many miles will it travel in 4 hours?",
+      "ground_truth": "160"
+    },
+    {
+      "id": "logic_010",
+      "bucket": "logic",
+      "question": "If 6 workers can build a wall in 12 days, how many days would it take 12 workers to build the same wall, assuming the same work rate per worker?",
+      "ground_truth": "6"
+    },
+    {
+      "id": "logic_011",
+      "bucket": "logic",
+      "question": "A number is doubled and then 5 is added, giving 21. What was the original number?",
+      "ground_truth": "8"
+    },
+    {
+      "id": "logic_012",
+      "bucket": "logic",
+      "question": "Sarah is twice as old as her brother. In 4 years, she will be 1.5 times as old as him. How old is Sarah's brother now?",
+      "ground_truth": "8"
+    },
+    {
+      "id": "logic_013",
+      "bucket": "logic",
+      "question": "A clock loses 15 minutes every hour. If it is set correctly at 12:00 noon, what time will the clock show when the actual time is 4:00 pm?",
+      "ground_truth": "3:00 pm"
+    },
+    {
+      "id": "logic_014",
+      "bucket": "logic",
+      "question": "If the day before yesterday was Wednesday, what day is tomorrow?",
+      "ground_truth": "Saturday"
+    },
+    {
+      "id": "logic_015",
+      "bucket": "logic",
+      "question": "A book has 300 pages. If you read 15 pages a day starting on day 1, on which day will you finish the book?",
+      "ground_truth": "Day 20"
+    },
+    {
+      "id": "logic_016",
+      "bucket": "logic",
+      "question": "Look at this series: 2, 6, 18, 54, ... What number comes next?",
+      "ground_truth": "162"
+    },
+    {
+      "id": "logic_017",
+      "bucket": "logic",
+      "question": "Look at this series: 1, 4, 9, 16, 25, ... What number comes next?",
+      "ground_truth": "36"
+    },
+    {
+      "id": "logic_018",
+      "bucket": "logic",
+      "question": "Look at this series: 3, 6, 11, 18, 27, ... What number comes next?",
+      "ground_truth": "38"
+    },
+    {
+      "id": "logic_019",
+      "bucket": "logic",
+      "question": "Look at this series: 100, 50, 25, 12.5, ... What number comes next?",
+      "ground_truth": "6.25"
+    },
+    {
+      "id": "logic_020",
+      "bucket": "logic",
+      "question": "Look at this series: 1, 1, 2, 3, 5, 8, ... What number comes next?",
+      "ground_truth": "13"
+    },
+    {
+      "id": "logic_021",
+      "bucket": "logic",
+      "question": "If all Bloops are Razzies, and all Razzies are Lazzies, are all Bloops definitely Lazzies?",
+      "ground_truth": "Yes"
+    },
+    {
+      "id": "logic_022",
+      "bucket": "logic",
+      "question": "Five people can paint 5 fences in 5 hours. How many hours would it take 10 people to paint 10 fences, assuming the same work rate?",
+      "ground_truth": "5"
+    },
+    {
+      "id": "logic_023",
+      "bucket": "logic",
+      "question": "A father is 4 times as old as his son. In 20 years, he will be twice as old as his son. How old is the son now?",
+      "ground_truth": "10"
+    },
+    {
+      "id": "logic_024",
+      "bucket": "logic",
+      "question": "You have two ropes, each of which takes exactly 60 minutes to burn, but they burn unevenly. Using only these two ropes and a lighter, what is the shortest amount of time you can measure that is impossible to measure otherwise: 45 minutes. True or false?",
+      "ground_truth": "True"
+    },
+    {
+      "id": "logic_025",
+      "bucket": "logic",
+      "question": "A car travels from City A to City B at 60 mph and returns at 40 mph. What is the average speed for the entire round trip, in mph?",
+      "ground_truth": "48"
+    },
+    {
+      "id": "logic_026",
+      "bucket": "logic",
+      "question": "If today is Monday, what day of the week will it be 100 days from now?",
+      "ground_truth": "Wednesday"
+    },
+    {
+      "id": "logic_027",
+      "bucket": "logic",
+      "question": "A jar contains only red and blue marbles. There are 3 times as many red marbles as blue marbles, and 40 marbles in total. How many blue marbles are there?",
+      "ground_truth": "10"
+    },
+    {
+      "id": "logic_028",
+      "bucket": "logic",
+      "question": "In a race, you overtake the person in second place. What position are you in now?",
+      "ground_truth": "Second place"
+    },
+    {
+      "id": "logic_029",
+      "bucket": "logic",
+      "question": "If it takes 8 hours to fill a pool using two pipes together, and one pipe alone takes 12 hours, how many hours does the other pipe alone take to fill the pool?",
+      "ground_truth": "24"
+    },
+    {
+      "id": "logic_030",
+      "bucket": "logic",
+      "question": "A store sells an item at a 20% discount for $80. What was the original price of the item, in dollars?",
+      "ground_truth": "$100"
+    },
+    {
+      "id": "logic_031",
+      "bucket": "logic",
+      "question": "How many times do a clock's hour and minute hands overlap between 12:00 noon and 12:00 midnight the same day (not counting the start)?",
+      "ground_truth": "11"
+    },
+    {
+      "id": "logic_032",
+      "bucket": "logic",
+      "question": "If you rearrange the letters 'CIFAIPC', you would get the name of a(n): ocean, country, or animal?",
+      "ground_truth": "Ocean (PACIFIC)"
+    },
+    {
+      "id": "logic_033",
+      "bucket": "logic",
+      "question": "A snail climbs 3 feet up a wall each day but slips back 2 feet each night. If the wall is 10 feet high, on which day does the snail first reach the top?",
+      "ground_truth": "Day 8"
+    },
+    {
+      "id": "logic_034",
+      "bucket": "logic",
+      "question": "If A is the brother of B, and B is the sister of C, and C is the father of D, what is A to D, assuming A is male?",
+      "ground_truth": "Uncle"
+    },
+    {
+      "id": "trivia_001",
+      "bucket": "trivia",
+      "question": "What is the chemical symbol for gold?",
+      "ground_truth": "Au"
+    },
+    {
+      "id": "trivia_002",
+      "bucket": "trivia",
+      "question": "Which planet in our solar system has the most moons?",
+      "ground_truth": "Saturn"
+    },
+    {
+      "id": "trivia_003",
+      "bucket": "trivia",
+      "question": "What is the capital city of Australia?",
+      "ground_truth": "Canberra"
+    },
+    {
+      "id": "trivia_004",
+      "bucket": "trivia",
+      "question": "Who wrote the play 'Romeo and Juliet'?",
+      "ground_truth": "William Shakespeare"
+    },
+    {
+      "id": "trivia_005",
+      "bucket": "trivia",
+      "question": "What is the largest organ in the human body?",
+      "ground_truth": "The skin"
+    },
+    {
+      "id": "trivia_006",
+      "bucket": "trivia",
+      "question": "In what year did World War II end?",
+      "ground_truth": "1945"
+    },
+    {
+      "id": "trivia_007",
+      "bucket": "trivia",
+      "question": "What is the smallest prime number?",
+      "ground_truth": "2"
+    },
+    {
+      "id": "trivia_008",
+      "bucket": "trivia",
+      "question": "Which element has the atomic number 1?",
+      "ground_truth": "Hydrogen"
+    },
+    {
+      "id": "trivia_009",
+      "bucket": "trivia",
+      "question": "What is the longest river in the world?",
+      "ground_truth": "The Nile"
+    },
+    {
+      "id": "trivia_010",
+      "bucket": "trivia",
+      "question": "Who painted the Mona Lisa?",
+      "ground_truth": "Leonardo da Vinci"
+    },
+    {
+      "id": "trivia_011",
+      "bucket": "trivia",
+      "question": "What is the currency of Japan?",
+      "ground_truth": "Yen"
+    },
+    {
+      "id": "trivia_012",
+      "bucket": "trivia",
+      "question": "How many continents are there on Earth?",
+      "ground_truth": "7"
+    },
+    {
+      "id": "trivia_013",
+      "bucket": "trivia",
+      "question": "What is the tallest mountain in the world, measured from sea level?",
+      "ground_truth": "Mount Everest"
+    },
+    {
+      "id": "trivia_014",
+      "bucket": "trivia",
+      "question": "Which gas do plants primarily absorb from the atmosphere for photosynthesis?",
+      "ground_truth": "Carbon dioxide"
+    },
+    {
+      "id": "trivia_015",
+      "bucket": "trivia",
+      "question": "Who was the first President of the United States?",
+      "ground_truth": "George Washington"
+    },
+    {
+      "id": "trivia_016",
+      "bucket": "trivia",
+      "question": "What is the freezing point of water in Celsius?",
+      "ground_truth": "0"
+    },
+    {
+      "id": "trivia_017",
+      "bucket": "trivia",
+      "question": "Which country is home to the kangaroo as a native species?",
+      "ground_truth": "Australia"
+    },
+    {
+      "id": "trivia_018",
+      "bucket": "trivia",
+      "question": "What is the chemical formula for water?",
+      "ground_truth": "H2O"
+    },
+    {
+      "id": "trivia_019",
+      "bucket": "trivia",
+      "question": "Who developed the theory of general relativity?",
+      "ground_truth": "Albert Einstein"
+    },
+    {
+      "id": "trivia_020",
+      "bucket": "trivia",
+      "question": "What is the capital city of Canada?",
+      "ground_truth": "Ottawa"
+    },
+    {
+      "id": "trivia_021",
+      "bucket": "trivia",
+      "question": "Which ocean is the largest by surface area?",
+      "ground_truth": "The Pacific Ocean"
+    },
+    {
+      "id": "trivia_022",
+      "bucket": "trivia",
+      "question": "What is the national language of Brazil?",
+      "ground_truth": "Portuguese"
+    },
+    {
+      "id": "trivia_023",
+      "bucket": "trivia",
+      "question": "How many bones are there in the adult human body?",
+      "ground_truth": "206"
+    },
+    {
+      "id": "trivia_024",
+      "bucket": "trivia",
+      "question": "What is the hardest naturally occurring substance on Earth?",
+      "ground_truth": "Diamond"
+    },
+    {
+      "id": "trivia_025",
+      "bucket": "trivia",
+      "question": "Which planet is known as the Red Planet?",
+      "ground_truth": "Mars"
+    },
+    {
+      "id": "trivia_026",
+      "bucket": "trivia",
+      "question": "Who is credited with inventing the telephone?",
+      "ground_truth": "Alexander Graham Bell"
+    },
+    {
+      "id": "trivia_027",
+      "bucket": "trivia",
+      "question": "What is the capital city of Egypt?",
+      "ground_truth": "Cairo"
+    },
+    {
+      "id": "trivia_028",
+      "bucket": "trivia",
+      "question": "Which vitamin is primarily produced by the human body when exposed to sunlight?",
+      "ground_truth": "Vitamin D"
+    },
+    {
+      "id": "trivia_029",
+      "bucket": "trivia",
+      "question": "What is the fastest land animal?",
+      "ground_truth": "The cheetah"
+    },
+    {
+      "id": "trivia_030",
+      "bucket": "trivia",
+      "question": "Which country gifted the Statue of Liberty to the United States?",
+      "ground_truth": "France"
+    },
+    {
+      "id": "trivia_031",
+      "bucket": "trivia",
+      "question": "What is the main gas found in the air we breathe, by volume?",
+      "ground_truth": "Nitrogen"
+    },
+    {
+      "id": "trivia_032",
+      "bucket": "trivia",
+      "question": "Who wrote the novel '1984'?",
+      "ground_truth": "George Orwell"
+    },
+    {
+      "id": "trivia_033",
+      "bucket": "trivia",
+      "question": "What is the square root of 144?",
+      "ground_truth": "12"
+    },
+    {
+      "id": "trick_001",
+      "bucket": "trick",
+      "question": "If a plane crashes exactly on the border between the United States and Canada, where are the survivors buried?",
+      "ground_truth": "Survivors are not buried"
+    },
+    {
+      "id": "trick_002",
+      "bucket": "trick",
+      "question": "How many months of the year have 28 days?",
+      "ground_truth": "12"
+    },
+    {
+      "id": "trick_003",
+      "bucket": "trick",
+      "question": "A farmer has 20 cows, and all but 10 die. How many cows does he have left?",
+      "ground_truth": "10"
+    },
+    {
+      "id": "trick_004",
+      "bucket": "trick",
+      "question": "What was the United States called before it was discovered by Europeans?",
+      "ground_truth": "It was already inhabited; it had no single name and was not 'discovered' in the sense of being unknown"
+    },
+    {
+      "id": "trick_005",
+      "bucket": "trick",
+      "question": "If you have only one match and you walk into a room with a kerosene lamp, an oil heater, and a wood-burning stove, which do you light first?",
+      "ground_truth": "The match"
+    },
+    {
+      "id": "trick_006",
+      "bucket": "trick",
+      "question": "How many animals of each kind did Moses take on the Ark?",
+      "ground_truth": "None — it was Noah, not Moses, who built the Ark"
+    },
+    {
+      "id": "trick_007",
+      "bucket": "trick",
+      "question": "A rooster lays an egg on the very top of a barn roof. Which side does the egg roll down, the left or the right?",
+      "ground_truth": "Neither — roosters don't lay eggs"
+    },
+    {
+      "id": "trick_008",
+      "bucket": "trick",
+      "question": "Is it legal for a man in California to marry his widow's sister?",
+      "ground_truth": "No — he is dead, since he has a widow"
+    },
+    {
+      "id": "trick_009",
+      "bucket": "trick",
+      "question": "If there are 8 apples and you take away 5, how many do you have?",
+      "ground_truth": "5 (the ones you took)"
+    },
+    {
+      "id": "trick_010",
+      "bucket": "trick",
+      "question": "A doctor gives you 3 pills and tells you to take one every 30 minutes. How many minutes will it take to take all 3 pills?",
+      "ground_truth": "60"
+    },
+    {
+      "id": "trick_011",
+      "bucket": "trick",
+      "question": "Which is heavier: a pound of feathers or a pound of bricks?",
+      "ground_truth": "They weigh the same"
+    },
+    {
+      "id": "trick_012",
+      "bucket": "trick",
+      "question": "How far can a fox run into the woods?",
+      "ground_truth": "Halfway — after that it is running out of the woods"
+    },
+    {
+      "id": "trick_013",
+      "bucket": "trick",
+      "question": "If a red house is made of red bricks, a blue house is made of blue bricks, and a pink house is made of pink bricks, what is a greenhouse made of?",
+      "ground_truth": "Glass"
+    },
+    {
+      "id": "trick_014",
+      "bucket": "trick",
+      "question": "Before Mount Everest was discovered, what was the tallest mountain on Earth?",
+      "ground_truth": "Mount Everest — it was always the tallest, whether or not it had been discovered"
+    },
+    {
+      "id": "trick_015",
+      "bucket": "trick",
+      "question": "How many seconds are there in a year?",
+      "ground_truth": "12 — January 2nd, February 2nd, etc. (unless the question means total seconds, which is about 31,536,000)"
+    },
+    {
+      "id": "trick_016",
+      "bucket": "trick",
+      "question": "A man is looking at a portrait. Someone asks who it is. He replies, 'Brothers and sisters I have none, but this man's father is my father's son.' Who is in the portrait?",
+      "ground_truth": "His son"
+    },
+    {
+      "id": "trick_017",
+      "bucket": "trick",
+      "question": "What can travel around the world while staying in the same corner?",
+      "ground_truth": "A stamp"
+    },
+    {
+      "id": "trick_018",
+      "bucket": "trick",
+      "question": "You're in a race and you pass the person in last place. What place are you in now?",
+      "ground_truth": "This is impossible — you cannot pass the person in last place"
+    },
+    {
+      "id": "trick_019",
+      "bucket": "trick",
+      "question": "A man builds a rectangular house with four walls, each wall facing south. A bear walks past. What color is the bear?",
+      "ground_truth": "White — the house must be at the North Pole, so it's a polar bear"
+    },
+    {
+      "id": "trick_020",
+      "bucket": "trick",
+      "question": "Mary's mother has four children. The first three are named April, May, and June. What is the name of the fourth child?",
+      "ground_truth": "Mary"
+    },
+    {
+      "id": "trick_021",
+      "bucket": "trick",
+      "question": "What has to be broken before you can use it?",
+      "ground_truth": "An egg"
+    },
+    {
+      "id": "trick_022",
+      "bucket": "trick",
+      "question": "A man shaves several times a day, yet still has a beard. How is this possible?",
+      "ground_truth": "He is a barber"
+    },
+    {
+      "id": "trick_023",
+      "bucket": "trick",
+      "question": "If two's company and three's a crowd, what are four and five?",
+      "ground_truth": "Nine"
+    },
+    {
+      "id": "trick_024",
+      "bucket": "trick",
+      "question": "What gets wetter as it dries?",
+      "ground_truth": "A towel"
+    },
+    {
+      "id": "trick_025",
+      "bucket": "trick",
+      "question": "A cowboy rode into town on Friday. He stayed three days and rode out on Friday. How is this possible?",
+      "ground_truth": "His horse is named Friday"
+    },
+    {
+      "id": "trick_026",
+      "bucket": "trick",
+      "question": "How many months have 30 days?",
+      "ground_truth": "11"
+    },
+    {
+      "id": "trick_027",
+      "bucket": "trick",
+      "question": "If a doctor tells you that you have a fatal illness and you have only 8 hours left to live, and instructs you to marry his daughter, what would that do to your remaining time?",
+      "ground_truth": "Nothing — marrying his daughter does not extend or change your remaining lifespan"
+    },
+    {
+      "id": "trick_028",
+      "bucket": "trick",
+      "question": "You enter a dark room with a candle, a wood stove, and a gas lamp. You only have one match. What do you light first?",
+      "ground_truth": "The match"
+    },
+    {
+      "id": "trick_029",
+      "bucket": "trick",
+      "question": "A woman shoots her husband, then holds him underwater for five minutes, then hangs him. Five minutes later they enjoy a nice dinner together. How?",
+      "ground_truth": "She is a photographer developing a photo of him"
+    },
+    {
+      "id": "trick_030",
+      "bucket": "trick",
+      "question": "What word in the English language does the following: the first two letters signify a male, the first three letters signify a female, the first four letters signify a great person, while the entire word signifies a great woman. What is the word?",
+      "ground_truth": "Heroine"
+    },
+    {
+      "id": "trick_031",
+      "bucket": "trick",
+      "question": "If it takes 6 men 6 days to dig 6 holes, how many days does it take 1 man to dig half a hole?",
+      "ground_truth": "You cannot dig half a hole — it's an impossible task, so the question has no valid finite answer"
+    },
+    {
+      "id": "trick_032",
+      "bucket": "trick",
+      "question": "A man lives on the 10th floor. Every day he takes the elevator to the ground floor to go to work. When he returns, he takes the elevator to the 7th floor and walks the rest, except on rainy days when he goes straight to the 10th floor. Why?",
+      "ground_truth": "He is too short to reach the button for the 10th floor, but can reach it with an umbrella on rainy days"
+    },
+    {
+      "id": "trick_033",
+      "bucket": "trick",
+      "question": "What occurs once in a minute, twice in a moment, and never in a thousand years?",
+      "ground_truth": "The letter 'M'"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+# TODO: pin versions once you're implementing
+langgraph
+langchain-core
+langchain-ollama
+pandas
