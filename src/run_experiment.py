@@ -1,5 +1,3 @@
-print("SCRIPT STARTED", flush=True)
-
 import argparse
 import datetime
 import json
@@ -183,4 +181,5 @@ if __name__ == "__main__":
     run(
         limit=args.limit,
         question_ids=args.question_ids,
+        
     )

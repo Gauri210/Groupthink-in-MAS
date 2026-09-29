@@ -16,7 +16,7 @@ class DeliberationState(TypedDict):
     question_id: int
     question_text: str
     correct_answer: str
-    lure_answer: Optional[str]   # plausible wrong answer, for analysis only
+    wrong_answer: Optional[str]   # plausible wrong answer, for analysis only
     condition: str                 # "solo_baseline" | "group_deliberation" | "group_with_contrarian"
 
     # rolling record of every agent's answer at every round

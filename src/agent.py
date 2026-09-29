@@ -12,7 +12,7 @@ You MUST respond ONLY with valid JSON in exactly this format:
 
 {
     "answer": "<your answer — a short number, word, or phrase>",
-    "reasoning": "<1-2 sentences>"
+    "reasoning": "<1 sentence explaining your reasoning>"
 }
 
 Keep the answer as short and direct as possible (e.g. a single number or
