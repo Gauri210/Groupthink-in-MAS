@@ -14,6 +14,8 @@ MAX_DEBATE_ROUNDS = 1
 
 CONDITIONS = [
     "solo_baseline",
+    "group_deliberation",
+    "group_with_contrarian",
 ]
 
 _PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

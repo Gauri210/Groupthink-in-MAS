@@ -50,21 +50,13 @@
   {
     "id": 7,
     "category": "logic",
-    "difficulty": "medium",
-    "question": "You have two ropes that each burn in exactly 60 minutes, but unevenly. How can you measure exactly 45 minutes?",
-    "correct_answer": "Light one rope at both ends and the other rope at one end at the same time; when the double-lit rope finishes (30 min), light the other end of the second rope (it has 15 min left)",
-    "wrong_answer": "It cannot be done"
-  },
-  {
-    "id": 8,
-    "category": "logic",
     "difficulty": "easy",
     "question": "How many times does the digit 9 appear when writing all numbers from 1 to 100?",
     "correct_answer": "20",
     "wrong_answer": "19"
   },
   {
-    "id": 9,
+    "id": 8,
     "category": "logic",
     "difficulty": "easy",
     "question": "If today is Monday, what day will it be 100 days from now?",
@@ -72,7 +64,7 @@
     "wrong_answer": "Tuesday"
   },
   {
-    "id": 10,
+    "id": 9,
     "category": "logic",
     "difficulty": "medium",
     "question": "A man is looking at a photo. Someone asks whose photo it is. He says, 'Brothers and sisters, I have none. But this man's father is my father's son.' Who is in the photo?",
@@ -80,15 +72,7 @@
     "wrong_answer": "Himself"
   },
   {
-    "id": 11,
-    "category": "logic",
-    "difficulty": "medium",
-    "question": "Two trains 100 km apart move toward each other at 50 km/h each. A bird flies back and forth between them at 75 km/h until they meet. How far does the bird travel in total?",
-    "correct_answer": "75 km",
-    "wrong_answer": "100 km"
-  },
-  {
-    "id": 12,
+    "id": 10,
     "category": "logic",
     "difficulty": "easy",
     "question": "Which is heavier: a kilogram of feathers or a kilogram of iron?",
@@ -96,7 +80,7 @@
     "wrong_answer": "Iron"
   },
   {
-    "id": 13,
+    "id": 11,
     "category": "logic",
     "difficulty": "medium",
     "question": "In a race, you overtake the person in second place. What position are you in now?",
@@ -104,15 +88,7 @@
     "wrong_answer": "First"
   },
   {
-    "id": 14,
-    "category": "logic",
-    "difficulty": "medium",
-    "question": "If a plane crashes exactly on the border of the US and Canada, in which country are the survivors buried?",
-    "correct_answer": "Survivors aren't buried",
-    "wrong_answer": "The US"
-  },
-  {
-    "id": 15,
+    "id": 12,
     "category": "logic",
     "difficulty": "medium",
     "question": "A is the mother of B. B is the father of C. What relation is A to C?",
@@ -120,7 +96,7 @@
     "wrong_answer": "Mother"
   },
   {
-    "id": 16,
+    "id": 13,
     "category": "logic",
     "difficulty": "easy",
     "question": "How many months of the year have 28 days?",
@@ -128,15 +104,7 @@
     "wrong_answer": "1"
   },
   {
-    "id": 17,
-    "category": "logic",
-    "difficulty": "medium",
-    "question": "If you're running a race and pass the person in last place, what position are you in now?",
-    "correct_answer": "This is impossible \u2014 you can't pass the last place runner",
-    "wrong_answer": "Second to last"
-  },
-  {
-    "id": 18,
+    "id": 14,
     "category": "logic",
     "difficulty": "hard",
     "question": "Three boxes are labeled 'Apples', 'Oranges', and 'Apples & Oranges'. All three labels are wrong. You may draw one fruit from one box to correctly relabel all three. Which box should you draw from?",
@@ -144,7 +112,7 @@
     "wrong_answer": "It's impossible with one draw"
   },
   {
-    "id": 19,
+    "id": 15,
     "category": "logic",
     "difficulty": "easy",
     "question": "What is the next number in the sequence: 2, 4, 8, 16, ?",
@@ -152,7 +120,7 @@
     "wrong_answer": "24"
   },
   {
-    "id": 20,
+    "id": 16,
     "category": "logic",
     "difficulty": "medium",
     "question": "What is the next number in the Fibonacci-style sequence: 1, 1, 2, 3, 5, 8, ?",
@@ -160,15 +128,7 @@
     "wrong_answer": "11"
   },
   {
-    "id": 21,
-    "category": "logic",
-    "difficulty": "easy",
-    "question": "How many sides does a triangle have if one corner is cut off (creating a new flat edge)?",
-    "correct_answer": "4",
-    "wrong_answer": "3"
-  },
-  {
-    "id": 22,
+    "id": 17,
     "category": "logic",
     "difficulty": "medium",
     "question": "A doctor gives you 3 pills and tells you to take one every half hour. How long do the pills last in total?",
@@ -176,111 +136,7 @@
     "wrong_answer": "1.5 hours"
   },
   {
-    "id": 23,
-    "category": "logic",
-    "difficulty": "medium",
-    "question": "Divide 30 by half, then add 10. What is the result?",
-    "correct_answer": "70",
-    "wrong_answer": "25"
-  },
-  {
-    "id": 24,
-    "category": "logic",
-    "difficulty": "easy",
-    "question": "If there are 6 apples and you take away 4, how many do you have (that you took)?",
-    "correct_answer": "4",
-    "wrong_answer": "2"
-  },
-  {
-    "id": 25,
-    "category": "logic",
-    "difficulty": "medium",
-    "question": "What occurs once in a minute, twice in a moment, and never in a thousand years?",
-    "correct_answer": "The letter M",
-    "wrong_answer": "A second"
-  },
-  {
-    "id": 26,
-    "category": "logic",
-    "difficulty": "medium",
-    "question": "I am heavy when read forward, but not when read backward. What word am I?",
-    "correct_answer": "TON",
-    "wrong_answer": "STONE"
-  },
-  {
-    "id": 27,
-    "category": "logic",
-    "difficulty": "hard",
-    "question": "With a 3-gallon jug and a 5-gallon jug, how many gallons can you measure out that requires filling the 5-gallon jug, pouring into the 3-gallon jug, emptying the 3-gallon, pouring the remainder in, refilling the 5-gallon, and topping off the 3-gallon?",
-    "correct_answer": "4 gallons",
-    "wrong_answer": "It's impossible"
-  },
-  {
-    "id": 28,
-    "category": "logic",
-    "difficulty": "medium",
-    "question": "A woman shoots her husband with a camera, holds the film underwater to develop it, then hangs it to dry. What is her profession?",
-    "correct_answer": "Photographer",
-    "wrong_answer": "Murderer"
-  },
-  {
-    "id": 29,
-    "category": "logic",
-    "difficulty": "medium",
-    "question": "In a room of 23 randomly chosen people, is it more likely than not that two of them share a birthday?",
-    "correct_answer": "Yes",
-    "wrong_answer": "No"
-  },
-  {
-    "id": 30,
-    "category": "logic",
-    "difficulty": "hard",
-    "question": "A monk climbs a mountain in one day, resting at various points, reaching the top by evening. The next day he descends the same path, again resting at various points. Must there be a specific time of day when he is at the exact same point on the path on both days?",
-    "correct_answer": "Yes",
-    "wrong_answer": "No"
-  },
-  {
-    "id": 31,
-    "category": "logic",
-    "difficulty": "medium",
-    "question": "I have keys but no locks, space but no room, and you can enter but not go inside. What am I?",
-    "correct_answer": "A keyboard",
-    "wrong_answer": "A house"
-  },
-  {
-    "id": 32,
-    "category": "logic",
-    "difficulty": "easy",
-    "question": "A clock's minute and hour hands overlap at 12:00. How many times do they overlap between 12:00 and 1:00 (exclusive of the very start)?",
-    "correct_answer": "0",
-    "wrong_answer": "1"
-  },
-  {
-    "id": 33,
-    "category": "logic",
-    "difficulty": "medium",
-    "question": "How many degrees does the minute hand of a clock move in 15 minutes?",
-    "correct_answer": "90 degrees",
-    "wrong_answer": "15 degrees"
-  },
-  {
-    "id": 34,
-    "category": "logic",
-    "difficulty": "easy",
-    "question": "If a rooster lays an egg on the exact peak of a barn roof, which side does the egg roll down?",
-    "correct_answer": "Roosters don't lay eggs",
-    "wrong_answer": "The left side"
-  },
-  {
-    "id": 35,
-    "category": "logic",
-    "difficulty": "medium",
-    "question": "You flip a fair coin 5 times and get heads every time. What is the probability the 6th flip is heads?",
-    "correct_answer": "50%",
-    "wrong_answer": "Less than 50%, since heads is 'due' for tails"
-  },
-  {
-    "id": 36,
+    "id": 18,
     "category": "trivia",
     "difficulty": "easy",
     "question": "What is the capital of Australia?",
@@ -288,7 +144,7 @@
     "wrong_answer": "Sydney"
   },
   {
-    "id": 37,
+    "id": 19,
     "category": "trivia",
     "difficulty": "easy",
     "question": "Which planet is known as the Red Planet?",
@@ -296,7 +152,7 @@
     "wrong_answer": "Venus"
   },
   {
-    "id": 38,
+    "id": 20,
     "category": "trivia",
     "difficulty": "medium",
     "question": "Who wrote the play 'Romeo and Juliet'?",
@@ -304,7 +160,7 @@
     "wrong_answer": "Charles Dickens"
   },
   {
-    "id": 39,
+    "id": 21,
     "category": "trivia",
     "difficulty": "medium",
     "question": "What is the largest ocean on Earth by surface area?",
@@ -312,7 +168,7 @@
     "wrong_answer": "Atlantic Ocean"
   },
   {
-    "id": 40,
+    "id": 22,
     "category": "trivia",
     "difficulty": "easy",
     "question": "Which gas do plants primarily absorb for photosynthesis?",
@@ -320,7 +176,7 @@
     "wrong_answer": "Oxygen"
   },
   {
-    "id": 41,
+    "id": 23,
     "category": "trivia",
     "difficulty": "medium",
     "question": "In which year did the Titanic sink?",
@@ -328,7 +184,7 @@
     "wrong_answer": "1905"
   },
   {
-    "id": 42,
+    "id": 24,
     "category": "trivia",
     "difficulty": "medium",
     "question": "Which country gifted the Statue of Liberty to the United States?",
@@ -336,7 +192,7 @@
     "wrong_answer": "United Kingdom"
   },
   {
-    "id": 43,
+    "id": 25,
     "category": "trivia",
     "difficulty": "easy",
     "question": "What is the chemical symbol for gold?",
@@ -344,7 +200,7 @@
     "wrong_answer": "Ag"
   },
   {
-    "id": 44,
+    "id": 26,
     "category": "trivia",
     "difficulty": "medium",
     "question": "Who painted the Mona Lisa?",
@@ -352,7 +208,7 @@
     "wrong_answer": "Michelangelo"
   },
   {
-    "id": 45,
+    "id": 27,
     "category": "trivia",
     "difficulty": "medium",
     "question": "Which is the smallest planet in our solar system?",
@@ -360,7 +216,7 @@
     "wrong_answer": "Pluto"
   },
   {
-    "id": 46,
+    "id": 28,
     "category": "trivia",
     "difficulty": "hard",
     "question": "What is the longest river in the world by most measurements?",
@@ -368,7 +224,7 @@
     "wrong_answer": "The Amazon"
   },
   {
-    "id": 47,
+    "id": 29,
     "category": "trivia",
     "difficulty": "medium",
     "question": "Which country hosted the 2016 Summer Olympics?",
@@ -376,7 +232,7 @@
     "wrong_answer": "China"
   },
   {
-    "id": 48,
+    "id": 30,
     "category": "trivia",
     "difficulty": "easy",
     "question": "How many continents are there on Earth?",
@@ -384,7 +240,7 @@
     "wrong_answer": "6"
   },
   {
-    "id": 49,
+    "id": 31,
     "category": "trivia",
     "difficulty": "medium",
     "question": "Which scientist developed the theory of general relativity?",
@@ -392,7 +248,7 @@
     "wrong_answer": "Isaac Newton"
   },
   {
-    "id": 50,
+    "id": 32,
     "category": "trivia",
     "difficulty": "medium",
     "question": "What is the currency of Japan?",
@@ -400,7 +256,7 @@
     "wrong_answer": "Yuan"
   },
   {
-    "id": 51,
+    "id": 33,
     "category": "trivia",
     "difficulty": "hard",
     "question": "Which empire built Machu Picchu?",
@@ -408,7 +264,7 @@
     "wrong_answer": "The Aztec Empire"
   },
   {
-    "id": 52,
+    "id": 34,
     "category": "trivia",
     "difficulty": "medium",
     "question": "What is the hardest naturally occurring substance on Earth?",
@@ -416,135 +272,7 @@
     "wrong_answer": "Titanium"
   },
   {
-    "id": 53,
-    "category": "trivia",
-    "difficulty": "easy",
-    "question": "Which animal is popularly known as the 'King of the Jungle'?",
-    "correct_answer": "Lion",
-    "wrong_answer": "Tiger"
-  },
-  {
-    "id": 54,
-    "category": "trivia",
-    "difficulty": "medium",
-    "question": "Who was the first President of the United States?",
-    "correct_answer": "George Washington",
-    "wrong_answer": "John Adams"
-  },
-  {
-    "id": 55,
-    "category": "trivia",
-    "difficulty": "hard",
-    "question": "In which year did World War II end?",
-    "correct_answer": "1945",
-    "wrong_answer": "1944"
-  },
-  {
-    "id": 56,
-    "category": "trivia",
-    "difficulty": "medium",
-    "question": "What is the tallest mountain in the world above sea level?",
-    "correct_answer": "Mount Everest",
-    "wrong_answer": "K2"
-  },
-  {
-    "id": 57,
-    "category": "trivia",
-    "difficulty": "easy",
-    "question": "Which organ in the human body primarily pumps blood?",
-    "correct_answer": "The heart",
-    "wrong_answer": "The lungs"
-  },
-  {
-    "id": 58,
-    "category": "trivia",
-    "difficulty": "medium",
-    "question": "What is the capital of Canada?",
-    "correct_answer": "Ottawa",
-    "wrong_answer": "Toronto"
-  },
-  {
-    "id": 59,
-    "category": "trivia",
-    "difficulty": "hard",
-    "question": "Which country has the most natural lakes in the world?",
-    "correct_answer": "Canada",
-    "wrong_answer": "Russia"
-  },
-  {
-    "id": 60,
-    "category": "trivia",
-    "difficulty": "medium",
-    "question": "What does 'www' stand for in a website address?",
-    "correct_answer": "World Wide Web",
-    "wrong_answer": "Wide World Web"
-  },
-  {
-    "id": 61,
-    "category": "trivia",
-    "difficulty": "medium",
-    "question": "Which vitamin is produced in human skin when exposed to sunlight?",
-    "correct_answer": "Vitamin D",
-    "wrong_answer": "Vitamin C"
-  },
-  {
-    "id": 62,
-    "category": "trivia",
-    "difficulty": "hard",
-    "question": "Which country was the first to grant women the right to vote nationally?",
-    "correct_answer": "New Zealand",
-    "wrong_answer": "United States"
-  },
-  {
-    "id": 63,
-    "category": "trivia",
-    "difficulty": "medium",
-    "question": "Which planet has the most confirmed moons as of recent counts?",
-    "correct_answer": "Saturn",
-    "wrong_answer": "Jupiter"
-  },
-  {
-    "id": 64,
-    "category": "trivia",
-    "difficulty": "easy",
-    "question": "What is the freezing point of water in degrees Celsius?",
-    "correct_answer": "0",
-    "wrong_answer": "32"
-  },
-  {
-    "id": 65,
-    "category": "trivia",
-    "difficulty": "medium",
-    "question": "Which language has the most native speakers worldwide?",
-    "correct_answer": "Mandarin Chinese",
-    "wrong_answer": "English"
-  },
-  {
-    "id": 66,
-    "category": "trivia",
-    "difficulty": "hard",
-    "question": "Who is generally credited with inventing the World Wide Web?",
-    "correct_answer": "Tim Berners-Lee",
-    "wrong_answer": "Bill Gates"
-  },
-  {
-    "id": 67,
-    "category": "trivia",
-    "difficulty": "medium",
-    "question": "What is the largest desert in the world by area?",
-    "correct_answer": "Antarctic Desert",
-    "wrong_answer": "Sahara Desert"
-  },
-  {
-    "id": 68,
-    "category": "trivia",
-    "difficulty": "medium",
-    "question": "Which metal is liquid at room temperature?",
-    "correct_answer": "Mercury",
-    "wrong_answer": "Lead"
-  },
-  {
-    "id": 69,
+    "id": 35,
     "category": "trick",
     "difficulty": "easy",
     "question": "How many months of the year have exactly 30 days?",
@@ -552,7 +280,7 @@
     "wrong_answer": "11"
   },
   {
-    "id": 70,
+    "id": 36,
     "category": "trick",
     "difficulty": "medium",
     "question": "A woman gives birth to twins, but hospital records show they have different birthdays. How is that possible?",
@@ -560,7 +288,7 @@
     "wrong_answer": "They have different fathers"
   },
   {
-    "id": 71,
+    "id": 37,
     "category": "trick",
     "difficulty": "easy",
     "question": "Is it legal in California for a man to marry his widow's sister?",
@@ -568,7 +296,7 @@
     "wrong_answer": "Yes, with a permit"
   },
   {
-    "id": 72,
+    "id": 38,
     "category": "trick",
     "difficulty": "medium",
     "question": "How many animals of each kind did Moses take onto the Ark?",
@@ -576,7 +304,7 @@
     "wrong_answer": "Two of each"
   },
   {
-    "id": 73,
+    "id": 39,
     "category": "trick",
     "difficulty": "easy",
     "question": "What has to be broken before you can use it?",
@@ -584,7 +312,7 @@
     "wrong_answer": "A promise"
   },
   {
-    "id": 74,
+    "id": 40,
     "category": "trick",
     "difficulty": "easy",
     "question": "What can travel around the world while staying in a corner?",
@@ -592,7 +320,7 @@
     "wrong_answer": "A ball"
   },
   {
-    "id": 75,
+    "id": 41,
     "category": "trick",
     "difficulty": "medium",
     "question": "A man builds a house with four walls, all facing south, and a bear walks past. What color is the bear?",
@@ -600,7 +328,7 @@
     "wrong_answer": "Brown"
   },
   {
-    "id": 76,
+    "id": 42,
     "category": "trick",
     "difficulty": "easy",
     "question": "If a red house is made of red bricks and a blue house is made of blue bricks, what is a greenhouse made of?",
@@ -608,7 +336,7 @@
     "wrong_answer": "Green bricks"
   },
   {
-    "id": 77,
+    "id": 43,
     "category": "trick",
     "difficulty": "medium",
     "question": "How much dirt is in a hole that is 3 feet deep, 3 feet wide, and 3 feet long?",
@@ -616,7 +344,7 @@
     "wrong_answer": "27 cubic feet"
   },
   {
-    "id": 78,
+    "id": 44,
     "category": "trick",
     "difficulty": "easy",
     "question": "What common word becomes shorter when you add two letters to it?",
@@ -624,15 +352,7 @@
     "wrong_answer": "Long"
   },
   {
-    "id": 79,
-    "category": "trick",
-    "difficulty": "medium",
-    "question": "A man was born in 1985 and died at age 25 in the year 2010. How is this possible if it seems like a math error?",
-    "correct_answer": "It's not possible \u2014 he would be 25 in 2010 only if born in 1985, which checks out (no error)",
-    "wrong_answer": "He was born on a leap day"
-  },
-  {
-    "id": 80,
+    "id": 45,
     "category": "trick",
     "difficulty": "easy",
     "question": "How many letters are in the phrase 'the alphabet'?",
@@ -640,15 +360,7 @@
     "wrong_answer": "26"
   },
   {
-    "id": 81,
-    "category": "trick",
-    "difficulty": "easy",
-    "question": "Before Mount Everest was discovered/measured, what was the tallest mountain in the world?",
-    "correct_answer": "Mount Everest \u2014 its height doesn't depend on being discovered",
-    "wrong_answer": "K2"
-  },
-  {
-    "id": 82,
+    "id": 46,
     "category": "trick",
     "difficulty": "easy",
     "question": "What gets wetter the more it dries?",
@@ -656,7 +368,7 @@
     "wrong_answer": "A sponge"
   },
   {
-    "id": 83,
+    "id": 47,
     "category": "trick",
     "difficulty": "medium",
     "question": "A father and son are in a car crash. The father dies at the scene, and the son is rushed into surgery. The surgeon says, 'I can't operate on him, he's my son.' How is this possible?",
@@ -664,7 +376,7 @@
     "wrong_answer": "It's a stepfather situation"
   },
   {
-    "id": 84,
+    "id": 48,
     "category": "trick",
     "difficulty": "easy",
     "question": "What has keys but cannot open any locks?",
@@ -672,15 +384,7 @@
     "wrong_answer": "A map"
   },
   {
-    "id": 85,
-    "category": "trick",
-    "difficulty": "medium",
-    "question": "You enter a dark room with exactly one match. Inside are a candle, a kerosene lamp, and a fireplace. Which do you light first?",
-    "correct_answer": "The match itself",
-    "wrong_answer": "The candle"
-  },
-  {
-    "id": 86,
+    "id": 49,
     "category": "trick",
     "difficulty": "easy",
     "question": "The more of this you take, the more you leave behind. What is it?",
@@ -688,115 +392,11 @@
     "wrong_answer": "Money"
   },
   {
-    "id": 87,
-    "category": "trick",
-    "difficulty": "medium",
-    "question": "If two's company and three's a crowd, what are four and five?",
-    "correct_answer": "Nine (simple addition, not a riddle about company)",
-    "wrong_answer": "A bigger crowd"
-  },
-  {
-    "id": 88,
-    "category": "trick",
-    "difficulty": "easy",
-    "question": "What kind of building has the most stories, in a play-on-words sense?",
-    "correct_answer": "A library (it has the most 'stories' as in tales)",
-    "wrong_answer": "A skyscraper"
-  },
-  {
-    "id": 89,
-    "category": "trick",
-    "difficulty": "medium",
-    "question": "A person walks the wrong way down a one-way street, passing at least ten police officers, but no one stops them. Why not?",
-    "correct_answer": "They are walking, not driving",
-    "wrong_answer": "The police didn't notice"
-  },
-  {
-    "id": 90,
-    "category": "trick",
-    "difficulty": "medium",
-    "question": "Which is grammatically correct: 'the yolk of the egg is white' or 'the yolk of the egg are white'?",
-    "correct_answer": "Neither \u2014 egg yolks are yellow, not white",
-    "wrong_answer": "The first one"
-  },
-  {
-    "id": 91,
+    "id": 50,
     "category": "trick",
     "difficulty": "easy",
     "question": "What comes once in a year, twice in a week, but never in a single day?",
     "correct_answer": "The letter E",
     "wrong_answer": "A weekend"
-  },
-  {
-    "id": 92,
-    "category": "trick",
-    "difficulty": "medium",
-    "question": "A cowboy rode into town on Friday, stayed three days, and left on Friday. How is this possible?",
-    "correct_answer": "Friday is the name of his horse",
-    "wrong_answer": "He traveled through time zones"
-  },
-  {
-    "id": 93,
-    "category": "trick",
-    "difficulty": "easy",
-    "question": "I have branches, but no fruit, trunk, or leaves. What am I?",
-    "correct_answer": "A bank",
-    "wrong_answer": "A dead tree"
-  },
-  {
-    "id": 94,
-    "category": "trick",
-    "difficulty": "medium",
-    "question": "How far into the woods can a fox run, at most, before it starts running out of the woods?",
-    "correct_answer": "Halfway",
-    "wrong_answer": "As far as it wants"
-  },
-  {
-    "id": 95,
-    "category": "trick",
-    "difficulty": "easy",
-    "question": "What has one eye but cannot see?",
-    "correct_answer": "A needle",
-    "wrong_answer": "A storm"
-  },
-  {
-    "id": 96,
-    "category": "trick",
-    "difficulty": "medium",
-    "question": "Two fathers and two sons go fishing together. Each catches exactly one fish, but they bring home only three fish total. How is that possible?",
-    "correct_answer": "They are a grandfather, a father, and a son \u2014 three people, not four",
-    "wrong_answer": "One fish got away"
-  },
-  {
-    "id": 97,
-    "category": "trick",
-    "difficulty": "easy",
-    "question": "What can you catch but never throw?",
-    "correct_answer": "A cold",
-    "wrong_answer": "A ball"
-  },
-  {
-    "id": 98,
-    "category": "trick",
-    "difficulty": "medium",
-    "question": "A man pushes his car to a hotel and immediately tells the owner he's bankrupt. Why does he say that?",
-    "correct_answer": "He's playing Monopoly",
-    "wrong_answer": "His car broke down"
-  },
-  {
-    "id": 99,
-    "category": "trick",
-    "difficulty": "easy",
-    "question": "What is full of holes but can still hold water?",
-    "correct_answer": "A sponge",
-    "wrong_answer": "A net"
-  },
-  {
-    "id": 100,
-    "category": "trick",
-    "difficulty": "medium",
-    "question": "What English word contains all five vowels (a, e, i, o, u) in order, exactly once each?",
-    "correct_answer": "Facetious (or 'abstemious')",
-    "wrong_answer": "Education"
   }
 ]

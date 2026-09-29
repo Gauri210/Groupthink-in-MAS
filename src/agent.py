@@ -11,9 +11,12 @@ JSON_FORMAT_INSTRUCTIONS = """
 You MUST respond ONLY with valid JSON in exactly this format:
 
 {
-    "answer": "<your answer — a short number, word, or phrase>",
-    "reasoning": "<1 sentence explaining your reasoning>"
+    "answer": "<your answer — a short number, word, or phrase, ALWAYS in quotes>",
+    "reasoning": "<1-2 sentences>"
 }
+
+IMPORTANT: the "answer" value must always be wrapped in double quotes, even
+if it is a number or dollar amount (e.g. "answer": "$0.05", NOT "answer": $0.05).
 
 Keep the answer as short and direct as possible (e.g. a single number or
 a few words). Do not include markdown, code fences, or any text outside
@@ -33,18 +36,39 @@ class Agent:
             temperature=TEMPERATURE
         )
 
+    def _repair_unquoted_value(self, text):
+        """
+        Fixes the common malformed-JSON case where a model writes:
+            "answer": $0.05,
+        instead of:
+            "answer": "$0.05",
+        i.e. an unquoted value starting with $ or a digit, right after the
+        "answer" key. Wraps it in quotes so json.loads can parse it normally.
+        This runs BEFORE any parsing attempt, so a correct-but-malformed
+        response isn't thrown away as a parse failure.
+        """
+        # Matches: "answer": $0.05   or   "answer": 0.05   (unquoted, ends at , or })
+        pattern = r'("answer"\s*:\s*)(\$?-?\d[\d.,]*)(\s*[,}])'
+        return re.sub(pattern, r'\1"\2"\3', text)
+
     def parse_response(self, raw_text):
         """
         Parse the model's response into {"answer": <str or None>, "reasoning": str}.
 
-        No longer validates against a fixed option set (free-text answers now) —
-        just requires a non-empty "answer" field. A genuine parse failure returns
-        answer=None so it can be filtered out of analysis rather than silently
-        counted as a real vote.
+        Order of attempts:
+        1. Repair common unquoted-numeric-value malformation, then try normal JSON parsing
+        2. Try to find JSON embedded in surrounding text (after the same repair)
+        3. Fallback: regex search for "answer": "..." (quoted)
+        4. Fallback: regex search for "answer": ... (unquoted, in case repair missed it)
+        5. Complete parsing failure -> answer=None
+
+        A genuine parse failure returns answer=None so it can be filtered out
+        of analysis rather than silently counted as a real vote.
         """
         cleaned_text = raw_text.strip()
         cleaned_text = re.sub(r"```json\s*", "", cleaned_text, flags=re.IGNORECASE)
         cleaned_text = re.sub(r"```\s*", "", cleaned_text)
+        cleaned_text = self._repair_unquoted_value(cleaned_text)
 
         def _finalize(answer, reasoning):
             if answer is None:
@@ -54,7 +78,7 @@ class Agent:
                 return {"answer": None, "reasoning": "EMPTY_ANSWER: " + str(reasoning)[:500]}
             return {"answer": answer, "reasoning": str(reasoning)[:500]}
 
-        # 1. Try normal JSON parsing
+        # 1. Try normal JSON parsing (post-repair)
         try:
             parsed = json.loads(cleaned_text)
             if isinstance(parsed, dict) and "answer" in parsed:
@@ -62,7 +86,7 @@ class Agent:
         except (json.JSONDecodeError, TypeError):
             pass
 
-        # 2. Try to find JSON embedded in surrounding text
+        # 2. Try to find JSON embedded in surrounding text (post-repair)
         json_match = re.search(r'\{.*?"answer"\s*:\s*"([^"]*)".*?\}', cleaned_text, re.DOTALL)
         if json_match:
             try:
@@ -71,12 +95,18 @@ class Agent:
             except json.JSONDecodeError:
                 pass
 
-        # 3. Fallback: regex search for "answer": "..."
+        # 3. Fallback: regex search for "answer": "..." (quoted)
         match = re.search(r'"answer"\s*:\s*"([^"]*)"', cleaned_text, re.IGNORECASE)
         if match:
             return _finalize(match.group(1), raw_text)
 
-        # 4. Complete parsing failure
+        # 4. Fallback: regex search for "answer": ... (unquoted, in case repair
+        #    regex above didn't catch an unusual format)
+        unquoted_match = re.search(r'"answer"\s*:\s*([^\s,}]+)', cleaned_text, re.IGNORECASE)
+        if unquoted_match:
+            return _finalize(unquoted_match.group(1), raw_text)
+
+        # 5. Complete parsing failure
         return {"answer": None, "reasoning": "PARSE_FAILED: " + raw_text[:500]}
 
     def answer_solo(self, question_text):
@@ -154,8 +184,8 @@ def normalize_answer(answer):
     """
     Normalize a free-text answer for equivalence comparison during voting
     and correctness checking: lowercase, strip whitespace, strip surrounding
-    punctuation/articles. Used by graph.py's vote node — kept here so agent
-    output and comparison logic use the same normalization rules.
+    punctuation/articles. Kept as a lightweight utility — the real matching
+    logic now lives in judge.py's numeric-first + LLM-fallback approach.
     """
     if answer is None:
         return None
