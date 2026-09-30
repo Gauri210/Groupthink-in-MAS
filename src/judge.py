@@ -1,11 +1,17 @@
 """
-A stronger local model (e.g. qwen2.5:14b) used to judge free-text answer
+A stronger local model (e.g. gemma2:9b) used to judge free-text answer
 equivalence, since agents phrasing "4" vs "four" or "Paris" vs "the city of
 Paris" can't be resolved by exact string matching.
 
-Two distinct jobs, two distinct prompts — don't conflate them:
-  - judge_equivalent: do two answers mean the same thing? (generic, no ground truth)
-  - judge_correct: does an answer match the KNOWN correct answer? (ground-truth-aware)
+IMPORTANT: before calling the LLM at all, both judge_equivalent and
+judge_correct try a deterministic numeric comparison first. This matters a
+lot for a question bank with currency/count answers ("$0.05" vs "10 cents",
+"$0.10" vs "0.1") — an LLM judge can and will get these wrong (e.g. merging
+"$0.05" and "10 cents" into "the same answer" because both are small money
+amounts), which silently corrupts majority voting and correctness scoring.
+The numeric check removes that failure mode entirely for anything that
+parses cleanly as a number; only genuinely non-numeric answers fall through
+to the LLM.
 """
 import json
 import re
@@ -28,6 +34,51 @@ def _get_judge_llm():
             temperature=JUDGE_TEMPERATURE
         )
     return _judge_llm
+
+
+def _try_parse_number(text):
+    """
+    Attempt to extract a single numeric value from free text, handling
+    common formats: "$0.05", "0.05", "5 cents" (converted to 0.05),
+    "10 dollars", "4", "four" is NOT handled here (word-numbers fall
+    through to the LLM judge instead — deliberately, since spelled-out
+    numbers are more ambiguous to regex-parse reliably).
+
+    Returns a float, or None if no confident numeric parse was possible.
+    """
+    if text is None:
+        return None
+    t = str(text).strip().lower()
+
+    # "$0.05", "$1.10", "0.05", "5"
+    dollar_match = re.fullmatch(r'\$?\s*(\d+(?:\.\d+)?)', t)
+    if dollar_match:
+        return float(dollar_match.group(1))
+
+    # "5 cents", "10 cents" -> convert to dollar-equivalent units
+    cents_match = re.fullmatch(r'(\d+(?:\.\d+)?)\s*cents?', t)
+    if cents_match:
+        return float(cents_match.group(1)) / 100.0
+
+    # "5 dollars", "1.10 dollars"
+    dollars_match = re.fullmatch(r'(\d+(?:\.\d+)?)\s*dollars?', t)
+    if dollars_match:
+        return float(dollars_match.group(1))
+
+    return None
+
+
+def _numeric_equivalent(answer_a, answer_b, tolerance=1e-6):
+    """
+    Returns True/False if BOTH answers parse as numbers and can be compared
+    directly, or None if either answer doesn't parse cleanly (caller should
+    fall back to the LLM judge in that case).
+    """
+    num_a = _try_parse_number(answer_a)
+    num_b = _try_parse_number(answer_b)
+    if num_a is None or num_b is None:
+        return None
+    return abs(num_a - num_b) < tolerance
 
 
 def _parse_bool_json(raw_text, key):
@@ -56,16 +107,24 @@ def judge_equivalent(question_text, answer_a, answer_b):
     """
     Generic equivalence check between two free-text answers, used to cluster
     agents into agreement groups for majority voting. No ground truth involved.
+
+    Tries a deterministic numeric comparison FIRST — only calls the LLM if
+    at least one answer doesn't parse as a clean number.
     """
     if answer_a is None or answer_b is None:
         return False
+
+    numeric_result = _numeric_equivalent(answer_a, answer_b)
+    if numeric_result is not None:
+        return numeric_result
 
     system_prompt = """
 You are a strict judge comparing two answers to the same question.
 
 Decide whether the two answers represent the SAME underlying answer, allowing
-for differences in phrasing, formatting, or units (e.g. "4" and "four" are the
-same; "Paris" and "the city of Paris" are the same; "9" and "90" are NOT the same).
+for differences in phrasing or wording (e.g. "Paris" and "the city of Paris"
+are the same). Do NOT treat different numeric values as the same just because
+they are both plausible-sounding — only exact numeric equivalents count.
 
 Respond ONLY with valid JSON in exactly this format:
 {"equivalent": true or false, "reasoning": "<one sentence>"}
@@ -89,16 +148,24 @@ def judge_correct(question_text, correct_answer, given_answer):
     """
     Ground-truth-aware check: does given_answer match the known correct_answer?
     Used for final scoring, not for clustering agents against each other.
+
+    Same numeric-first approach as judge_equivalent.
     """
     if given_answer is None:
         return False
+
+    numeric_result = _numeric_equivalent(correct_answer, given_answer)
+    if numeric_result is not None:
+        return numeric_result
 
     system_prompt = """
 You are a strict judge grading an answer against a known correct answer.
 
 Decide whether the given answer is correct, allowing for differences in
-phrasing, formatting, or units (e.g. "4" and "four" both count as correct if
-the correct answer is "4").
+phrasing or wording (e.g. "Paris" and "the city of Paris" both count as
+correct if the correct answer is "Paris"). Do NOT treat different numeric
+values as correct just because they are close or plausible-sounding — only
+exact numeric equivalents count as correct.
 
 Respond ONLY with valid JSON in exactly this format:
 {"correct": true or false, "reasoning": "<one sentence>"}
@@ -121,15 +188,12 @@ No markdown, no extra text.
 def cluster_answers(question_text, agent_answers):
     """
     Groups a list of {"agent_id": ..., "answer": ...} dicts into agreement
-    clusters using pairwise judge_equivalent calls. Returns a list of groups,
-    each group a list of the original dicts. None answers (parse failures)
-    are excluded entirely — they can't be judged equivalent to anything.
-
-    This is O(n^2) in judge calls, which is fine for N_AGENTS=3 (at most 3
-    pairwise comparisons) but would need a smarter approach for larger N.
+    clusters using judge_equivalent (numeric-first, LLM fallback). Returns a
+    list of groups, each group a list of the original dicts. None answers
+    (parse failures) are excluded entirely.
     """
     valid_answers = [a for a in agent_answers if a.get("answer") is not None]
-    groups = []  # list of lists
+    groups = []
 
     for entry in valid_answers:
         placed = False
