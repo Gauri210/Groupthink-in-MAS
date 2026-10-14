@@ -95,9 +95,14 @@ python -m streamlit run src/dashboard.py
 ```
 .
 ├── src/
-│   ├── run_experiment.py       # Runs all three LangGraph conditions
-│   ├── analyze_results.py      # Produces summary CSVs from raw outputs
-│   └── dashboard.py            # Streamlit dashboard
+│   ├── agent.py                # Agent node definitions
+│   ├── config.py               # Model and experiment config
+│   ├── dashboard.py            # Streamlit dashboard
+│   ├── graph.py                # LangGraph StateGraph definitions
+│   ├── judge.py                # LLM-as-judge scorer
+│   ├── results.py              # Results parsing and aggregation
+│   ├── run_experiment.py       # Entry point — runs all three conditions
+│   └── state.py                # Shared state schema
 ├── results/
 │   ├── raw/                    # Raw JSON outputs per condition
 │   └── processed/              # Summary CSVs (dashboard input)
