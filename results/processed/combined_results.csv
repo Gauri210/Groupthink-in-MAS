@@ -1,0 +1,151 @@
+question_id,category,difficulty,condition,correct_answer,wrong_answer,final_answer,is_correct,flipped,rescued,source_file,no_consensus,num_rounds
+1,logic,easy,group_deliberation,$0.05,$0.10,10 cents,False,False,False,run_20260930_142651.jsonl,False,2
+1,logic,easy,group_with_contrarian,$0.05,$0.10,$0.05,True,False,False,run_20260930_142651.jsonl,False,2
+1,logic,easy,solo_baseline,$0.05,$0.10,$0.10,False,False,False,run_20260930_142651.jsonl,False,1
+2,logic,easy,group_deliberation,5 minutes,100 minutes,5 minutes,True,False,False,run_20260930_142651.jsonl,False,2
+2,logic,easy,group_with_contrarian,5 minutes,100 minutes,5 minutes,True,False,False,run_20260930_142651.jsonl,False,2
+2,logic,easy,solo_baseline,5 minutes,100 minutes,5 minutes,True,False,False,run_20260930_142651.jsonl,False,1
+3,logic,medium,group_deliberation,47 days,24 days,47,True,False,False,run_20260930_142651.jsonl,False,2
+3,logic,medium,group_with_contrarian,47 days,24 days,47,True,False,False,run_20260930_142651.jsonl,False,2
+3,logic,medium,solo_baseline,47 days,24 days,47,True,False,False,run_20260930_142651.jsonl,False,1
+4,logic,easy,group_deliberation,No,Yes,no,True,False,False,run_20260930_142651.jsonl,False,2
+4,logic,easy,group_with_contrarian,No,Yes,No,True,False,False,run_20260930_142651.jsonl,False,2
+4,logic,easy,solo_baseline,No,Yes,No,True,False,False,run_20260930_142651.jsonl,False,1
+5,logic,medium,group_deliberation,Yes,No,yes,True,False,False,run_20260930_142651.jsonl,False,2
+5,logic,medium,group_with_contrarian,Yes,No,yes,True,False,False,run_20260930_142651.jsonl,False,2
+5,logic,medium,solo_baseline,Yes,No,yes,True,False,False,run_20260930_142651.jsonl,False,1
+6,logic,easy,group_deliberation,9,8,9,True,False,False,run_20260930_142651.jsonl,False,2
+6,logic,easy,group_with_contrarian,9,8,9,True,False,False,run_20260930_142651.jsonl,False,2
+6,logic,easy,solo_baseline,9,8,9,True,False,False,run_20260930_142651.jsonl,False,1
+7,logic,easy,group_deliberation,20,19,11,False,False,False,run_20260930_142651.jsonl,False,2
+7,logic,easy,group_with_contrarian,20,19,11,False,False,False,run_20260930_142651.jsonl,False,2
+7,logic,easy,solo_baseline,20,19,11,False,False,False,run_20260930_142651.jsonl,False,1
+8,logic,easy,group_deliberation,Wednesday,Tuesday,Tuesday,False,False,False,run_20260930_142651.jsonl,False,2
+8,logic,easy,group_with_contrarian,Wednesday,Tuesday,Thursday,False,True,False,run_20260930_142651.jsonl,False,2
+8,logic,easy,solo_baseline,Wednesday,Tuesday,Tuesday,False,False,False,run_20260930_142651.jsonl,False,1
+9,logic,medium,group_deliberation,His son,Himself,The man himself,False,False,False,run_20260930_142651.jsonl,False,2
+9,logic,medium,group_with_contrarian,His son,Himself,The man in the photo,False,False,False,run_20260930_142651.jsonl,False,2
+9,logic,medium,solo_baseline,His son,Himself,The man's son,True,False,False,run_20260930_142651.jsonl,False,1
+10,logic,easy,group_deliberation,They weigh the same,Iron,Equal,True,False,False,run_20260930_142651.jsonl,False,2
+10,logic,easy,group_with_contrarian,They weigh the same,Iron,Equal,True,False,False,run_20260930_142651.jsonl,False,2
+10,logic,easy,solo_baseline,They weigh the same,Iron,Equal,True,False,False,run_20260930_142651.jsonl,False,1
+11,logic,medium,group_deliberation,Second,First,Second place,True,False,False,run_20261002_134453.jsonl,False,2
+11,logic,medium,group_with_contrarian,Second,First,Third place,False,True,False,run_20261002_134453.jsonl,False,2
+11,logic,medium,solo_baseline,Second,First,Second place,True,False,False,run_20261002_134453.jsonl,False,1
+12,logic,medium,group_deliberation,Grandmother,Mother,Grandmother,True,False,False,run_20261002_134453.jsonl,False,2
+12,logic,medium,group_with_contrarian,Grandmother,Mother,Grandmother,True,False,False,run_20261002_134453.jsonl,False,2
+12,logic,medium,solo_baseline,Grandmother,Mother,Grandmother,True,False,False,run_20261002_134453.jsonl,False,1
+13,logic,easy,group_deliberation,12,1,11,False,False,False,run_20261002_134453.jsonl,False,2
+13,logic,easy,group_with_contrarian,12,1,11,False,False,False,run_20261002_134453.jsonl,False,2
+13,logic,easy,solo_baseline,12,1,11,False,False,False,run_20261002_134453.jsonl,False,1
+14,logic,hard,group_deliberation,The box labeled 'Apples & Oranges',It's impossible with one draw,Apples & Oranges,True,False,False,run_20261002_134453.jsonl,False,2
+14,logic,hard,group_with_contrarian,The box labeled 'Apples & Oranges',It's impossible with one draw,Apples & Oranges,True,False,False,run_20261002_134453.jsonl,False,2
+14,logic,hard,solo_baseline,The box labeled 'Apples & Oranges',It's impossible with one draw,Apples & Oranges,True,False,False,run_20261002_134453.jsonl,False,1
+15,logic,easy,group_deliberation,32,24,32,True,False,False,run_20261002_134453.jsonl,False,2
+15,logic,easy,group_with_contrarian,32,24,32,True,False,False,run_20261002_134453.jsonl,False,2
+15,logic,easy,solo_baseline,32,24,32,True,False,False,run_20261002_134453.jsonl,False,1
+16,logic,medium,group_deliberation,13,11,21,False,True,False,run_20261002_101121.jsonl,False,2
+16,logic,medium,group_with_contrarian,13,11,13,True,False,False,run_20261002_101121.jsonl,False,2
+16,logic,medium,solo_baseline,13,11,13,True,False,False,run_20261002_101121.jsonl,False,1
+17,logic,medium,group_deliberation,1 hour,1.5 hours,6 hours,False,True,False,run_20261002_101121.jsonl,False,2
+17,logic,medium,group_with_contrarian,1 hour,1.5 hours,5 hours,False,True,False,run_20261002_101121.jsonl,False,2
+17,logic,medium,solo_baseline,1 hour,1.5 hours,6 hours,False,False,False,run_20261002_101121.jsonl,False,1
+18,trivia,easy,group_deliberation,Canberra,Sydney,Canberra,True,False,False,run_20261002_101121.jsonl,False,2
+18,trivia,easy,group_with_contrarian,Canberra,Sydney,Canberra,True,False,False,run_20261002_101121.jsonl,False,2
+18,trivia,easy,solo_baseline,Canberra,Sydney,"""Canberra""",True,False,False,run_20261002_101121.jsonl,False,1
+19,trivia,easy,group_deliberation,Mars,Venus,Mars,True,False,False,run_20261002_101121.jsonl,False,2
+19,trivia,easy,group_with_contrarian,Mars,Venus,Mars,True,False,False,run_20261002_101121.jsonl,False,2
+19,trivia,easy,solo_baseline,Mars,Venus,Mars,True,False,False,run_20261002_101121.jsonl,False,1
+20,trivia,medium,group_deliberation,William Shakespeare,Charles Dickens,William Shakespeare,True,False,False,run_20261002_101121.jsonl,False,2
+20,trivia,medium,group_with_contrarian,William Shakespeare,Charles Dickens,William Shakespeare,True,False,False,run_20261002_101121.jsonl,False,2
+20,trivia,medium,solo_baseline,William Shakespeare,Charles Dickens,William Shakespeare,True,False,False,run_20261002_101121.jsonl,False,1
+21,trivia,medium,group_deliberation,Pacific Ocean,Atlantic Ocean,Pacific Ocean,True,False,False,run_20261002_150819.jsonl,False,2
+21,trivia,medium,group_with_contrarian,Pacific Ocean,Atlantic Ocean,Pacific Ocean,True,False,False,run_20261002_150819.jsonl,False,2
+21,trivia,medium,solo_baseline,Pacific Ocean,Atlantic Ocean,Pacific Ocean,True,False,False,run_20261002_150819.jsonl,False,1
+22,trivia,easy,group_deliberation,Carbon dioxide,Oxygen,Carbon dioxide,True,False,False,run_20261002_150819.jsonl,False,2
+22,trivia,easy,group_with_contrarian,Carbon dioxide,Oxygen,Carbon dioxide,True,False,False,run_20261002_150819.jsonl,False,2
+22,trivia,easy,solo_baseline,Carbon dioxide,Oxygen,Carbon dioxide,True,False,False,run_20261002_150819.jsonl,False,1
+23,trivia,medium,group_deliberation,1912,1905,1912,True,False,False,run_20261002_150819.jsonl,False,2
+23,trivia,medium,group_with_contrarian,1912,1905,1912,True,False,False,run_20261002_150819.jsonl,False,2
+23,trivia,medium,solo_baseline,1912,1905,1912,True,False,False,run_20261002_150819.jsonl,False,1
+24,trivia,medium,group_deliberation,France,United Kingdom,France,True,False,False,run_20261002_150819.jsonl,False,2
+24,trivia,medium,group_with_contrarian,France,United Kingdom,France,True,False,False,run_20261002_150819.jsonl,False,2
+24,trivia,medium,solo_baseline,France,United Kingdom,France,True,False,False,run_20261002_150819.jsonl,False,1
+25,trivia,easy,group_deliberation,Au,Ag,Au,True,False,False,run_20261002_150819.jsonl,False,2
+25,trivia,easy,group_with_contrarian,Au,Ag,Au,True,False,False,run_20261002_150819.jsonl,False,2
+25,trivia,easy,solo_baseline,Au,Ag,Au,True,False,False,run_20261002_150819.jsonl,False,1
+26,trivia,medium,group_deliberation,Leonardo da Vinci,Michelangelo,Leonardo da Vinci,True,False,False,run_20261002_150819.jsonl,False,2
+26,trivia,medium,group_with_contrarian,Leonardo da Vinci,Michelangelo,Leonardo da Vinci,True,False,False,run_20261002_150819.jsonl,False,2
+26,trivia,medium,solo_baseline,Leonardo da Vinci,Michelangelo,Leonardo da Vinci,True,False,False,run_20261002_150819.jsonl,False,1
+27,trivia,medium,group_deliberation,Mercury,Pluto,Mercury,True,False,False,run_20261004_135747.jsonl,False,2
+27,trivia,medium,group_with_contrarian,Mercury,Pluto,Mercury,True,False,False,run_20261004_135747.jsonl,False,2
+27,trivia,medium,solo_baseline,Mercury,Pluto,Mercury,True,False,False,run_20261004_135747.jsonl,False,1
+28,trivia,hard,group_deliberation,The Nile,The Amazon,Nile,True,False,False,run_20261004_135747.jsonl,False,2
+28,trivia,hard,group_with_contrarian,The Nile,The Amazon,Amazon,False,False,False,run_20261004_135747.jsonl,False,2
+28,trivia,hard,solo_baseline,The Nile,The Amazon,Nile,True,False,False,run_20261004_135747.jsonl,False,1
+29,trivia,medium,group_deliberation,Brazil,China,Brazil,True,False,False,run_20261004_135747.jsonl,False,2
+29,trivia,medium,group_with_contrarian,Brazil,China,Brazil,True,False,False,run_20261004_135747.jsonl,False,2
+29,trivia,medium,solo_baseline,Brazil,China,Brazil,True,False,False,run_20261004_135747.jsonl,False,1
+30,trivia,easy,group_deliberation,7,6,7,True,False,False,run_20261004_135747.jsonl,False,2
+30,trivia,easy,group_with_contrarian,7,6,Seven,True,False,False,run_20261004_135747.jsonl,False,2
+30,trivia,easy,solo_baseline,7,6,7,True,False,False,run_20261004_135747.jsonl,False,1
+31,trivia,medium,group_deliberation,Albert Einstein,Isaac Newton,Albert Einstein,True,False,False,run_20261007_103143.jsonl,False,2
+31,trivia,medium,group_with_contrarian,Albert Einstein,Isaac Newton,Albert Einstein,True,False,False,run_20261007_103143.jsonl,False,2
+31,trivia,medium,solo_baseline,Albert Einstein,Isaac Newton,Albert Einstein,True,False,False,run_20261007_103143.jsonl,False,1
+32,trivia,medium,group_deliberation,Yen,Yuan,Japanese yen,True,False,False,run_20261007_103143.jsonl,False,2
+32,trivia,medium,group_with_contrarian,Yen,Yuan,Japanese yen,True,False,False,run_20261007_103143.jsonl,False,2
+32,trivia,medium,solo_baseline,Yen,Yuan,"""Japanese Yen (¥)""",True,False,False,run_20261007_103143.jsonl,False,1
+33,trivia,hard,group_deliberation,The Inca Empire,The Aztec Empire,Inca Empire,True,False,False,run_20261007_103143.jsonl,False,2
+33,trivia,hard,group_with_contrarian,The Inca Empire,The Aztec Empire,Inca Empire,True,False,False,run_20261007_103143.jsonl,False,2
+33,trivia,hard,solo_baseline,The Inca Empire,The Aztec Empire,Inca Empire,True,False,False,run_20261007_103143.jsonl,False,1
+34,trivia,medium,group_deliberation,Diamond,Titanium,Diamond,True,False,False,run_20261007_103143.jsonl,False,2
+34,trivia,medium,group_with_contrarian,Diamond,Titanium,Diamond,True,False,False,run_20261007_103143.jsonl,False,2
+34,trivia,medium,solo_baseline,Diamond,Titanium,Diamond,True,False,False,run_20261007_103143.jsonl,False,1
+35,trick,easy,group_deliberation,4,11,4,True,False,False,run_20261007_103143.jsonl,False,2
+35,trick,easy,group_with_contrarian,4,11,4,True,False,False,run_20261007_103143.jsonl,False,2
+35,trick,easy,solo_baseline,4,11,7,False,False,False,run_20261007_103143.jsonl,False,1
+36,trick,medium,group_deliberation,One was born just before midnight and the other just after,They have different fathers,"They were born on the same day, but one twin was born first.",False,False,False,run_20261007_103143.jsonl,False,2
+36,trick,medium,group_with_contrarian,One was born just before midnight and the other just after,They have different fathers,They were born at different times.,False,False,False,run_20261007_103143.jsonl,False,2
+36,trick,medium,solo_baseline,One was born just before midnight and the other just after,They have different fathers,"One was born first, then the other was born later.",False,False,False,run_20261007_103143.jsonl,False,1
+37,trick,easy,group_deliberation,"No, because he is dead (he has a widow)","Yes, with a permit",No,True,True,True,run_20261007_103143.jsonl,False,2
+37,trick,easy,group_with_contrarian,"No, because he is dead (he has a widow)","Yes, with a permit",Yes,False,False,False,run_20261007_103143.jsonl,False,2
+37,trick,easy,solo_baseline,"No, because he is dead (he has a widow)","Yes, with a permit",No,True,False,False,run_20261007_103143.jsonl,False,1
+38,trick,medium,group_deliberation,"None — it was Noah, not Moses, who built the Ark",Two of each,Two of each kind,False,False,False,run_20261007_103143.jsonl,False,2
+38,trick,medium,group_with_contrarian,"None — it was Noah, not Moses, who built the Ark",Two of each,Seven pairs of each kind,False,True,False,run_20261007_103143.jsonl,False,2
+38,trick,medium,solo_baseline,"None — it was Noah, not Moses, who built the Ark",Two of each,Two of each kind,False,False,False,run_20261007_103143.jsonl,False,1
+39,trick,easy,group_deliberation,An egg,A promise,Eggshell,True,False,False,run_20261007_103143.jsonl,False,2
+39,trick,easy,group_with_contrarian,An egg,A promise,Eggshell,True,False,False,run_20261007_103143.jsonl,False,2
+39,trick,easy,solo_baseline,An egg,A promise,An egg,True,False,False,run_20261007_103143.jsonl,False,1
+40,trick,easy,group_deliberation,A stamp,A ball,A stamp,True,False,False,run_20261007_103143.jsonl,False,2
+40,trick,easy,group_with_contrarian,A stamp,A ball,stamp,True,False,False,run_20261007_103143.jsonl,False,2
+40,trick,easy,solo_baseline,A stamp,A ball,Stamp,True,False,False,run_20261007_103143.jsonl,False,1
+41,trick,medium,group_deliberation,"White, since the house must be at the North Pole",Brown,White,True,False,False,run_20261007_152946.jsonl,False,2
+41,trick,medium,group_with_contrarian,"White, since the house must be at the North Pole",Brown,white,True,False,False,run_20261007_152946.jsonl,False,2
+41,trick,medium,solo_baseline,"White, since the house must be at the North Pole",Brown,white,True,False,False,run_20261007_152946.jsonl,False,1
+42,trick,easy,group_deliberation,Glass,Green bricks,glass,True,True,True,run_20261007_152946.jsonl,False,2
+42,trick,easy,group_with_contrarian,Glass,Green bricks,varied materials,False,False,False,run_20261007_152946.jsonl,False,2
+42,trick,easy,solo_baseline,Glass,Green bricks,Glass,True,False,False,run_20261007_152946.jsonl,False,1
+43,trick,medium,group_deliberation,"None — it's a hole, there's no dirt in it",27 cubic feet,Zero,True,False,False,run_20261007_152946.jsonl,False,2
+43,trick,medium,group_with_contrarian,"None — it's a hole, there's no dirt in it",27 cubic feet,Zero,True,False,False,run_20261007_152946.jsonl,False,2
+43,trick,medium,solo_baseline,"None — it's a hole, there's no dirt in it",27 cubic feet,Zero,True,False,False,run_20261007_152946.jsonl,False,1
+44,trick,easy,group_deliberation,Short (adding 'er' makes 'shorter'),Long,short,False,False,False,run_20261007_152946.jsonl,False,2
+44,trick,easy,group_with_contrarian,Short (adding 'er' makes 'shorter'),Long,short,False,False,False,run_20261007_152946.jsonl,False,2
+44,trick,easy,solo_baseline,Short (adding 'er' makes 'shorter'),Long,St,False,False,False,run_20261007_152946.jsonl,False,1
+45,trick,easy,group_deliberation,11,26,11,True,True,True,run_20261007_152946.jsonl,False,2
+45,trick,easy,group_with_contrarian,11,26,13,False,True,False,run_20261007_152946.jsonl,False,2
+45,trick,easy,solo_baseline,11,26,12,False,False,False,run_20261007_152946.jsonl,False,1
+46,trick,easy,group_deliberation,A towel,A sponge,Towel,True,False,False,run_20261007_152946.jsonl,False,2
+46,trick,easy,group_with_contrarian,A towel,A sponge,Towel,True,False,False,run_20261007_152946.jsonl,False,2
+46,trick,easy,solo_baseline,A towel,A sponge,towel,True,False,False,run_20261007_152946.jsonl,False,1
+47,trick,medium,group_deliberation,The surgeon is the boy's mother,It's a stepfather situation,The surgeon is the son's mother.,True,False,False,run_20261007_152946.jsonl,False,2
+47,trick,medium,group_with_contrarian,The surgeon is the boy's mother,It's a stepfather situation,The surgeon is the son's mother.,True,False,False,run_20261007_152946.jsonl,False,2
+47,trick,medium,solo_baseline,The surgeon is the boy's mother,It's a stepfather situation,The surgeon is the son's mother.,True,False,False,run_20261007_152946.jsonl,False,1
+48,trick,easy,group_deliberation,A piano,A map,dictionary,False,False,False,run_20261007_152946.jsonl,False,2
+48,trick,easy,group_with_contrarian,A piano,A map,Dictionary,False,False,False,run_20261007_152946.jsonl,False,2
+48,trick,easy,solo_baseline,A piano,A map,A dictionary,False,False,False,run_20261007_152946.jsonl,False,1
+49,trick,easy,group_deliberation,Footsteps,Money,Footsteps,True,False,False,run_20261007_152946.jsonl,False,2
+49,trick,easy,group_with_contrarian,Footsteps,Money,Footsteps,True,False,False,run_20261007_152946.jsonl,False,2
+49,trick,easy,solo_baseline,Footsteps,Money,Footsteps,True,False,False,run_20261007_152946.jsonl,False,1
+50,trick,easy,group_deliberation,The letter E,A weekend,,False,False,False,run_20261007_152946.jsonl,True,2
+50,trick,easy,group_with_contrarian,The letter E,A weekend,Month,False,False,False,run_20261007_152946.jsonl,False,2
+50,trick,easy,solo_baseline,The letter E,A weekend,Year,False,False,False,run_20261007_152946.jsonl,False,1

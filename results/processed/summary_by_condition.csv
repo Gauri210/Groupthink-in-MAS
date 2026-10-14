@@ -1,0 +1,4 @@
+condition,n,is_correct,flipped,rescued,no_consensus
+solo_baseline,50,0.76,0.0,0.0,0.0
+group_deliberation,50,0.76,0.1,0.06,0.02
+group_with_contrarian,50,0.7,0.1,0.0,0.0

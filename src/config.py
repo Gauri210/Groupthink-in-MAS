@@ -1,8 +1,8 @@
 import os
 
 OLLAMA_BASE_URL = "http://127.0.0.1:11434"
-OLLAMA_MODEL = "phi4-mini"
-CONTRARIAN_MODEL = "phi4-mini"
+OLLAMA_MODEL = "qwen2.5:7b"
+CONTRARIAN_MODEL = "qwen2.5:7b"
 
 N_AGENTS = 3
 TEMPERATURE = 0.7
