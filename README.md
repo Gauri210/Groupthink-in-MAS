@@ -129,5 +129,3 @@ python -m streamlit run src/dashboard.py
 - LLM judge introduces its own scoring error
 
 ---
-
-*BTech Data Science — NMIMS MPSTME*
