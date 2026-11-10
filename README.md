@@ -1,6 +1,9 @@
+
 # Groupthink in Multi-Agent LLM Systems
 
 > Does adding more AI agents make decisions worse?
+
+**Status:** ongoing research project. Results below are from a pilot run (n=50) and are descriptive; larger and repeated runs are planned.
 
 An Asch-inspired controlled experiment that tests whether LLM-based agents
 exhibit human-like conformity during group deliberation — abandoning a correct
@@ -24,16 +27,26 @@ agent role reduce it?
 
 ## Key Findings
 
-| Condition | Accuracy | Flip Rate | Rescue Rate |
-|---|---|---|---|
-| solo_baseline | 76.0% | 0.0% | 0.0% |
-| group_deliberation | 76.0% | 10.0% | 6.0% |
-| group_with_contrarian | 70.0% | 10.0% | 0.0% |
+| Condition             | Accuracy | Flip Rate | Rescue Rate |
+| --------------------- | -------- | --------- | ----------- |
+| solo_baseline         | 76.0%    | 0.0%      | 0.0%        |
+| group_deliberation    | 76.0%    | 10.0%     | 6.0%        |
+| group_with_contrarian | 70.0%    | 10.0%     | 0.0%        |
 
 - Peer exposure causes agents to revise correct answers at a **10% rate**
 - Group deliberation matches solo accuracy but adds modest rescue capability
 - An unguided contrarian **reduces accuracy by 6pp** with zero rescue benefit
 - Trick questions showed the highest condition sensitivity (−18.8pp under contrarian vs. group)
+
+### Accuracy by question category
+
+| Category              | solo_baseline | group_deliberation | group_with_contrarian |
+| --------------------- | ------------- | ------------------ | --------------------- |
+| Logic / math (17)     | 70.6%         | 58.8%              | 64.7%                 |
+| Trick (16)            | 56.3%         | 68.8%              | 50.0%                 |
+| Trivia / factual (17) | 100.0%        | 100.0%             | 94.1%                 |
+
+The conformity cost (H1) appears only on logic questions in this pilot; on trick questions group deliberation scored *higher* than solo, so H3 is not supported in its original direction. With 16–17 questions per category, these category-level differences are especially noisy.
 
 ---
 
@@ -53,10 +66,10 @@ with a deterministic numeric pre-check for currency/percentage variants.
 
 ## Experimental Conditions
 
-| Condition | Description |
-|---|---|
-| `solo_baseline` | Each agent answers independently; majority of 3 is final |
-| `group_deliberation` | Round 1: all agents answer. Round 2: each sees peers and may revise. Majority vote. |
+| Condition                 | Description                                                                                      |
+| ------------------------- | ------------------------------------------------------------------------------------------------ |
+| `solo_baseline`         | Each agent answers independently; majority of 3 is final                                         |
+| `group_deliberation`    | Round 1: all agents answer. Round 2: each sees peers and may revise. Majority vote.              |
 | `group_with_contrarian` | Identical to group, except Agent 3 is instructed to challenge emerging consensus before agreeing |
 
 **Question bank:** 50 open-ended free-text questions — 17 logic/math, 17 trivia/factual,
@@ -106,7 +119,8 @@ python -m streamlit run src/dashboard.py
 ├── results/
 │   ├── raw/                    # Raw JSON outputs per condition
 │   └── processed/              # Summary CSVs (dashboard input)
-├── questions.json              # Question bank with category labels
+├── data/
+│   └── questions.json          # Question bank with category labels
 └── requirements.txt
 ```
 
@@ -127,5 +141,7 @@ python -m streamlit run src/dashboard.py
 - n=50; differences are descriptive, not statistically significant
 - Single base model across all agents
 - LLM judge introduces its own scoring error
+- Category-level results rest on 16–17 questions each
+- Temperature 0.7 means individual runs vary; results should be repeated across seeds
 
 ---
